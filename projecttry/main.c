@@ -28,7 +28,7 @@ unsigned char *mask_image(unsigned char *image1, unsigned char *image2, unsigned
             for (int k = 0; k < channel; k+=3)
             {
                 a = i * width * channel + j * channel + k;
-                if(image2[a+1] > 180)
+                if(image2[a+1] > 183)
                 // middle value is the G in RGB, choose a value close to 232 (original green screen value)
                 {
                     temp_array[a] = image3[a];
